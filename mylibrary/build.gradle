@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+group = 'guowenlong.me.aspectj'
+version = '1.0.0'
+
+dependencies {
+//gradle sdk
+    compile gradleApi()
+    //groovy sdk
+    compile localGroovy()
+    compile 'org.aspectj:aspectjtools:1.9.1'
+    compile 'org.aspectj:aspectjrt:1.9.1'
+    compile 'com.android.tools.build:gradle:3.1.2'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //提交到远程服务器：
+            // repository(url: "http://www.xxx.com/repos") {
+            //    authentication(userName: "admin", password: "admin")
+            // }
+            //本地的Maven地址设置为D:/repos
+            repository(url: uri('/Users/guowenlong/Maven'))
+        }
+    }
+}
