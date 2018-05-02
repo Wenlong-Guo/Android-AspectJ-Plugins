@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
-apply plugin: 'guowenlong.me.aspectj'
+apply plugin: 'me.guowenlong.aspectj'
 
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "guowenlong.me.gradlepluginsdemo"
+        applicationId "me.guowenlong.gradlepluginsdemo"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -31,7 +31,7 @@ buildscript {
     }
     dependencies {
         //格式为-->group:module:version
-        classpath 'guowenlong.me.aspectj:mylibrary:1.0.0'
+        classpath 'me.guowenlong.aspectj:mylibrary:1.0.0'
     }
 }
 dependencies {
