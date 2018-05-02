@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 import org.aspectj.lang.annotation.Aspect;
 
-import me.guowenlong.gradlepluginsdemo.Animals;
-
 /**
  * 测试页面
  */
