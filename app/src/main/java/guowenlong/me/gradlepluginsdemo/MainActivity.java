@@ -9,6 +9,9 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 
+/**
+ * 测试页面
+ */
 @Aspect
 public class MainActivity extends AppCompatActivity {
 
