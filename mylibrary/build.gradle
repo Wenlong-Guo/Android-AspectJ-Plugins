@@ -1,15 +1,14 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
 
-
 dependencies {
 //gradle sdk
-    compile gradleApi()
+    implementation gradleApi()
     //groovy sdk
-    compile localGroovy()
-    compile 'org.aspectj:aspectjtools:1.9.1'
-    compile 'org.aspectj:aspectjrt:1.9.1'
-    compile 'com.android.tools.build:gradle:3.1.2'
+    implementation localGroovy()
+    implementation 'org.aspectj:aspectjtools:1.9.1'
+    implementation 'org.aspectj:aspectjrt:1.9.1'
+    implementation 'com.android.tools.build:gradle:3.1.2'
 }
 apply from: '../bintray.gradle'
 

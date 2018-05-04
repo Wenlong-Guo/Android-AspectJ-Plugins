@@ -28,7 +28,7 @@ public class AspectJPlugin implements Plugin<Project> {
         }
 
         project.dependencies {
-            compile 'org.aspectj:aspectjrt:1.9.1'
+            implementation 'org.aspectj:aspectjrt:1.9.1'
         }
 
         variants.all { variant ->
